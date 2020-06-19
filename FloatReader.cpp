@@ -1,17 +1,4 @@
-/*
- *
- *            PROGRAMMER: 
- *         PROBLEM TITLE: 
- *    PROBLEM DEFINITION: 
- *                  DATE: 
- *     SYSTEM - HARDWARE: 
- *            - SOFTWARE: 
- *         Input Devices: 
- *        Output Devices: 
- *                                                                          
- *   PROGRAM ASSUMPTIONS: 
- *                                                              
- */
+
 
 #include <iostream>
 #include <fstream>
