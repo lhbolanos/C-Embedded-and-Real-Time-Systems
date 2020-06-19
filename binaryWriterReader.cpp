@@ -13,158 +13,10 @@ using namespace std;
     int rows;
     int cols;
     
-    
-    //Working!
-  /*int write_binary_file_demo() {
-    // demo function that writes binary data to a file named data.bin in the following format:
-    // {unsigned short int}
-    // {short int}
-    // {unsigned int}
-    // {int}
-    // {unsigned long long}
-    // {long long}
-    // {float}
-    // {double}
-
-    ofstream outFile;
-    
-
-
-    cout << "Please enter a file name to write : ";
-    getline(cin, fileName);
-    fileName += ".bin";
-    
-    outFile.open(fileName.c_str(), ios::binary); // note: ios::binary tells C++ to open the file as binary file mode
-
-
-    
-    cout << "Enter number of rows: " << endl;
-    cin >> rows;
-    cout << "Enter number of columns: " << endl;
-    cin >> cols;
-    
-    if (outFile) {
-        long double arr[rows][cols];
-        
-        
-        cout << "Enter array element: " << endl;
-    
-        for (int i = 0; i<rows;i++){
-        
-            for (int j = 0; j < cols; j++){
-            
-            cout << "Enter the " << i<<j<< " element: ";
-            cin >> arr[i][j];
-            
-        }
-        
-    }
-
-        // output the values is done with the write function, the write
-        // function requires only the address of the data we want to write,
-        // and how many bytes in size of the data ( we have to cast the
-        // address returned by the address operator as a (char *) or byte 
-        // pointer.
-        outFile.write((char *) &arr, sizeof (arr));
-
-
-        outFile.close();
-        cout << "File: " << fileName.c_str() << " successfully written.\n";
-    } else {
-        cout << "Could not open" << fileName.c_str() << " for output\n";
-        return 1;
-    }
-    
-    ifstream inFile;
-     
-     
-    inFile.open(fileName.c_str(), ios::binary); // note: ios::binary tells C++ to open the file as binary file mode
-    
-
-    
-    if (inFile) {
-        long double arr[rows][cols];
-
-        // read the values is done with the read function, the read
-        // function requires only the address of where we want to store
-        // the read data into memory, and how many bytes in size of the data 
-        // to read ( we have to cast the address returned by the address 
-        // operator as a (char *) or byte pointer.
-        inFile.read((char *) &arr, sizeof (arr));
-
-        inFile.close();
-        cout << "File: " << fileName << " successfully read.\n";
-        cout << "Here are the values:\n";
-        for (int i = 0; i < rows; i++){
-            
-            for (int j = 0; j<cols;j++){
-                
-                cout << arr[i][j] << " ";
-                
-            }
-            cout << endl;
-        }
-    } else {
-        cout << "Could not open data.bin for reading\n";
-        return 1;
-    }
-    return 0;
-
-}
-*/
-
-    
-    // Working!
-
-    
-    
-    //rows and cols not initialized without the other functions
-    // need to figure out how to read rows/cols FROM binary file
-/*int program_Reader(){
-       
-        
-    ifstream inFile;
-     
-    cout << "Enter file name: ";
-     cin >> fileName;
-    
-    inFile.open(fileName.c_str(), ios::binary); // note: ios::binary tells C++ to open the file as binary file mode
-    
-
-    
-    if (inFile) {
-        long double arr[rows][cols];
-
-        // read the values is done with the read function, the read
-        // function requires only the address of where we want to store
-        // the read data into memory, and how many bytes in size of the data 
-        // to read ( we have to cast the address returned by the address 
-        // operator as a (char *) or byte pointer.
-        inFile.read((char *) &arr, sizeof (arr));
-
-        inFile.close();
-        cout << "File: " << fileName << " successfully read.\n";
-        cout << "Here are the values:\n";
-        for (int i = 0; i < rows; i++){
-            
-            for (int j = 0; j<cols;j++){
-                
-                cout << arr[i][j] << " ";
-                
-            }
-            cout << endl;
-        }
-    } else {
-        cout << "Could not open data.bin for reading\n";
-        return 1;
-    }
-    return 0;
-       
-       
-   }*/
+  
 
 int random_generator() {
-    // demo function that writes binary data to a file named data.bin in the following format:
+    
 
 
     ofstream outFile;
@@ -267,47 +119,6 @@ int random_generator() {
    
    
     
-/*int programReader(){
-        
-     
-     ifstream inFile;
-     
-
-     cout << "Enter file name: ";
-     cin >> fileName;
-     
-    inFile.open(fileName.c_str(), ios::binary); // note: ios::binary tells C++ to open the file as binary file mode
-    
-
-    
-    if (inFile) {
-        long double arr[rows][cols];
-
-        // read the values is done with the read function, the read
-        // function requires only the address of where we want to store
-        // the read data into memory, and how many bytes in size of the data 
-        // to read ( we have to cast the address returned by the address 
-        // operator as a (char *) or byte pointer.
-        inFile.read((char *) &arr, sizeof (arr));
-
-        inFile.close();
-        cout << "File: " << fileName << " successfully read.\n";
-        cout << "Here are the values:\n";
-        for (int i = 0; i < rows; i++){
-            
-            for (int j = 0; j<cols;j++){
-                
-                cout << arr[i][j] << " ";
-                
-            }
-            cout << endl;
-        }
-    } else {
-        cout << "Could not open data.bin for reading\n";
-        return 1;
-    }
-    return 0;
-    }*/
 
 int read_binary_file_demo()
 {
@@ -377,19 +188,11 @@ int read_binary_file_demo()
 
 int main() {
     
-    //read_binary_file_demo();
-    //program_Reader();
-    //programReader();
+
     
     random_generator();
     
-   /*if (write_binary_file_demo() != 0) {
-        cout << "Output error, program terminating.\n";
-        return 1;
-    } else 
-        cout << "Program successfully run!\n";
-        return 0;*/
-    
+ 
     
     
     
